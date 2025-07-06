@@ -40,16 +40,22 @@ ENV/
 # Database
 *.sqlite3
 
-# Uploads directory (except .gitkeep)
-uploads/*
-!uploads/.gitkeep
+# Uploads
+uploads/
 
-# ML models and data
-model_registry/
-ml_models/saved_models/
-*.h5
-*.pkl
-*.npz
+# ML models
+ml/models/*.h5
+ml/models/*.pkl
+
+# MLflow
+mlruns/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
 
 # Local development
 .DS_Store
